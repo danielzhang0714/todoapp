@@ -1,1 +1,109 @@
-@import './reset.css';
+@charset "utf-8";
+@import "reset.css";
+
+body {
+  background-color: #cccccc;
+  color: #333;
+}
+
+.app {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.task-form {
+  display: inline-flex;
+  margin-bottom: 32px;
+}
+
+.task-form input {
+  padding: 8px 14px;
+  border: 1px solid #000;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 15px;
+  width: 240px;
+  outline: none;
+}
+
+.task-form button {
+  background-color: #7c5cfc;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 8px 18px;
+  border-radius: 0 6px 6px 0;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: smooth 0.5s ease-in-out;
+}
+
+.task-form button:hover {
+  background-color: #3c1cbb;
+}
+
+/* Grid */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: left;
+}
+
+/* Card */
+.task-card {
+  background: #fff;
+  border: 1px solid #000;
+  border-left: 6px solid #dddd3e;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-card.completed {
+  border-left: 6px solid #52bc3a;
+}
+
+.task-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.task-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Action buttons */
+.task-actions {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.task-actions button {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 26px;
+  height: 26px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #666;
+}
+
+.task-actions button:hover {
+  background-color: #f0f0f0;
+}
